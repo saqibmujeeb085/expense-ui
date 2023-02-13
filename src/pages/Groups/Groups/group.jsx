@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './group.css';
 import Clark from './../../../images/clark.png';
 import Pagination from './../../../components/Pagination/pagination';
+import { Link } from 'react-router-dom';
+import CreateGroups from '../../../components/Modals/CreateGroups/createGroups';
 
 
 const Group = () => {
+  const [openCreateGroups, setOpenCreateGroups] = useState(false);
   return ( 
+    <>
+    { openCreateGroups &&
+      <CreateGroups changeState={setOpenCreateGroups} />
+      }
     <div className="Container_width_main">
       <h2>GROUPS</h2>
       <div className="table_data line">
@@ -17,7 +24,7 @@ const Group = () => {
             <option value="20">20</option>
             <option value="25">25</option>
           </select>
-          <button onClick="">Create new group</button>
+          <button onClick={() => setOpenCreateGroups(true)}>Create new group</button>
         </div>
         <div className="table">
         <table>
@@ -45,7 +52,7 @@ const Group = () => {
             <img src={Clark} alt="Group" />
             </td>
             <td>
-            <h3>Clark</h3>
+            <h3>BBQ</h3>
             </td>
             <td>
             <h3>Trip</h3>
@@ -56,7 +63,9 @@ const Group = () => {
             <td>
             <div className="action_buttons">
             <i className="fa-solid fa-pencil"></i>
+            <Link to="/Group/Transactions">
             <i className="fa-solid fa-eye"></i>
+            </Link>
             <i className="fa-solid fa-trash"></i>
             </div>
             </td>
@@ -69,6 +78,7 @@ const Group = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

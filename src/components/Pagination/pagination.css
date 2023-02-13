@@ -1,0 +1,22 @@
+.pagination ul {
+    display: flex;
+    align-items: center;
+}
+
+.pagination ul li {
+    list-style: none;
+    padding: 10px;
+    border: 2px solid #308B8D;
+    background: #13252C;
+    cursor: pointer;
+}
+
+.pagination {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.active {
+    background: #4deeea !IMPORTANT;
+    color: black;
+}

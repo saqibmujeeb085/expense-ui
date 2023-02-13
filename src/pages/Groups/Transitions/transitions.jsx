@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import GroupSidebar from './../../../components/Sidebars/GroupSidebar/groupSidebar';
 import './transitions.css';
 import Clark from './../../../images/clark.png';
 import Pagination from './../../../components/Pagination/pagination';
 import './transitions.css'
+import NewTransitions from '../../../components/Modals/NewTransitions/newTransitions';
 
 const Transitions = () => {
+  const [opentransition, setOpentransition] = useState(false)
   return ( 
-    <div className="Container_width_main double_column">
+    <>
+    {opentransition &&
+    <NewTransitions changeState={setOpentransition}/>
+  }
+        <div className="Container_width_main double_column">
       <div className="with_sidebar">
         <div className="Group_sidebar">
           <GroupSidebar />
@@ -25,7 +31,7 @@ const Transitions = () => {
             <option value="20">20</option>
             <option value="25">25</option>
           </select>
-          <button onClick="">Add New Transaction</button>
+          <button onClick={() => setOpentransition(true)}>Add New Transaction</button>
         </div>
         <div className="table">
         <table>
@@ -75,6 +81,7 @@ const Transitions = () => {
     
       </div>
     </div>
+    </>
   )
 }
 

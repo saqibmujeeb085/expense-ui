@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Pagination from '../../../components/Pagination/pagination';
 import GroupSidebar from '../../../components/Sidebars/GroupSidebar/groupSidebar';
 import Per from './../../../images/per.png';
 import './recentActivity.css';
+import NewTransaction from '../../../components/Modals/NewTransactionActivity/newTransaction';
 
 
 
 const RecentActivity = () => {
+  const [openRecent, setOpenRecent] = useState(false);
   return ( 
+    <>
+    {openRecent &&
+    <NewTransaction changeState={setOpenRecent}/>
+    }
     <div className="Container_width_main double_column">
     <div className="with_sidebar">
       <div className="Group_sidebar">
@@ -30,7 +36,7 @@ const RecentActivity = () => {
         <button onClick="">Add New Member</button>
       </div>
       <div className="box_2">
-        <div className="flex_spaceBetween">
+        <div className="flex_spaceBetween cursor" onClick={() => setOpenRecent(true)}>
         <div className="img_with_text">
                   <img src={Per} alt="Group pic"/>
                   <div className="Group_name">
@@ -52,6 +58,7 @@ const RecentActivity = () => {
   
     </div>
   </div>
+  </>
   )
 }
 

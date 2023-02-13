@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GroupSidebar from '../../../components/Sidebars/GroupSidebar/groupSidebar';
 import Clark from './../../../images/clark.png';
 import Pagination from '../../../components/Pagination/pagination';
 import './members.css';
+import NewMember from '../../../components/Modals/NewMember/newMember';
 
 const Members = () => {
-  return ( 
+  
+  const [openNewMember, setOpenNewMember] = useState(false);
+
+  return (
+    <> 
+    { openNewMember &&
+    <NewMember changeState={setOpenNewMember} />
+    }
     <div className="Container_width_main double_column">
     <div className="with_sidebar">
       <div className="Group_sidebar">
@@ -24,7 +32,7 @@ const Members = () => {
           <option value="20">20</option>
           <option value="25">25</option>
         </select>
-        <button onClick="">Add New Member</button>
+        <button onClick={() => setOpenNewMember(true)}>Add New Member</button>
       </div>
       <div className="table center_table_containt">
       <table>
@@ -56,6 +64,7 @@ const Members = () => {
   
     </div>
   </div>
+  </>
   )
 }
 

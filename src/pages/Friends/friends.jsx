@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import "./friends.css";
 import Span from './../../images/span.png';
+import NewFriend from "../../components/Modals/NewFriend/newFriend";
 
 const Friends = () => {
+  const [openNewFriend, setOpenNewFriend] = useState(false);
   return (
+    <>
+    {openNewFriend && 
+    <NewFriend changeState={setOpenNewFriend}/>
+    }
     <div className="Container_width_main">
       <div className="flex_spaceBetween line_bottom_full">
         <h2>FRIENDS</h2>
         <div className="button_and_earch">
-          <button  className="butt" onClick={{}}>Add Friends</button>
+          <button  className="butt" onClick={() => setOpenNewFriend(true)}>Add Friends</button>
           <div className="search_box">
             <input type="text" className="searchTerm" placeholder="Search..." />
             <button type="submit" className="searchButton">
@@ -32,6 +38,7 @@ const Friends = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import GroupSidebar from '../../../components/Sidebars/GroupSidebar/groupSidebar';
 import Clark from './../../../images/clark.png';
 import Pagination from '../../../components/Pagination/pagination';
 import './debts.css';
+import SettleAllDebt from '../../../components/Modals/SettleAllDebt/settleAllDebt';
+
+
 
 const Debts = () => {
+  const [openDebts, setOpenDebts] = useState(false)
   return ( 
+    <>
+    {openDebts &&
+    <SettleAllDebt changeState={setOpenDebts}/>
+  }
     <div className="Container_width_main double_column">
       <div className="with_sidebar">
         <div className="Group_sidebar">
@@ -24,11 +32,11 @@ const Debts = () => {
             <option value="20">20</option>
             <option value="25">25</option>
           </select>
-          <button onClick="">Settle All Debt</button>
+          <button>Settle All Debt</button>
         </div>
         <div className="table center_table_containt">
         <table>
-          <tr>
+          <tr onClick={() => setOpenDebts(true)} class="cursor">
             <td>
             <div className="debt_data_paid_by">   
             <img src={Clark} alt="Group" />
@@ -60,6 +68,7 @@ const Debts = () => {
     
       </div>
     </div>
+    </>
   )
 }
 

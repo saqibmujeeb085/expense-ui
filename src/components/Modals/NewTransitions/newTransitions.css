@@ -1,0 +1,44 @@
+.paid_or_recieved {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px 0px 0px;
+}
+
+.paid_or_recieved select {
+    border: none;
+}
+
+.Amount {
+    padding: 10px 0px;
+}
+
+.purpose h3 {
+    color: #a6b2c2;
+    margin-bottom: 10px;
+}
+
+.purpose select {
+    border: navajowhite;
+}
+
+.purpose_option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date_and_time h3 {
+    color: #a6b2c2;
+    margin-bottom: 10px;
+}
+.from_whom_box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.from_whom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

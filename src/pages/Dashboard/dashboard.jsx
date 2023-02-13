@@ -4,6 +4,7 @@ import Spec from './../../images/spec.png';
 import Span from './../../images/span.png';
 import { Link } from 'react-router-dom';
 
+
 const Dashboard = () => {
   return ( 
     <div className="Container_width_main">
@@ -54,6 +55,7 @@ const Dashboard = () => {
             </tr>
             <tr>
               <td>
+              <Link to="/Group/Transactions">
                 <div className="img_with_text">
                   <img src={Spec} alt="Group pic"/>
                   <div className="Group_name">
@@ -61,6 +63,7 @@ const Dashboard = () => {
                     <h4>4 members</h4>
                   </div>
                 </div>
+              </Link>
               </td>
               <td>
                 <h5>Home</h5>

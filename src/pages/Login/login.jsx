@@ -36,7 +36,9 @@ const Login = () => {
               <Link to="/ForgetPassword/ConfirmEmail" className="link">
                 Forget Password?
               </Link>
+              <Link to="/Dashboard">
               <input type="submit" value="Login" className="short_butt" />
+              </Link>
             </div>
           </form>
         </div>

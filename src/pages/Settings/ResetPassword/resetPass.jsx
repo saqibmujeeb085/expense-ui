@@ -4,29 +4,29 @@ import './resetPass.css';
 
 const ResetPass = () => {
   return ( 
-    <div className="Container_width_main double_column">
-    <div className="with_sidebar">
-      <div className="Group_sidebar">
+    <div classNameName="Container_width_main double_column">
+    <div classNameName="with_sidebar">
+      <div classNameName="Group_sidebar">
         <SettingSidebar />
       </div>
     </div>
-    <div className="main_conaitner">
+    <div classNameName="main_conaitner">
     
     <h2>GENERAL</h2>
     <form>
-    <div className="box setting_page_general line">
-      <div className="user_data_input">
-      <div className="user_dta">
+    <div classNameName="box setting_page_general line">
+      <div classNameName="user_data_input">
+      <div classNameName="user_dta">
         <h4>Password</h4>
-        <input className="input" type="text" name="Uname" id="Uname" placeholder='Reset Password'/>
+        <input classNameName="input" type="text" name="Uname" id="Uname" placeholder='Reset Password'/>
       </div>
-      <div className="user_dta">
+      <div classNameName="user_dta">
       <h4>Revise Password</h4>
-        <input className="input" type="text" name="Uemail" id="Uname" placeholder='Revise Password'/>
+        <input classNameName="input" type="text" name="Uemail" id="Uname" placeholder='Revise Password'/>
       </div>
       </div>
 
-    <div className="sub_button">
+    <div classNameName="sub_button">
     <button>Change Password</button>
     </div>
     </div>

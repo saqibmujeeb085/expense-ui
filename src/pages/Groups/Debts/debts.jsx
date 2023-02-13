@@ -14,17 +14,17 @@ const Debts = () => {
     {openDebts &&
     <SettleAllDebt changeState={setOpenDebts}/>
   }
-    <div className="Container_width_main double_column">
-      <div className="with_sidebar">
-        <div className="Group_sidebar">
+    <div classNameName="Container_width_main double_column">
+      <div classNameName="with_sidebar">
+        <div classNameName="Group_sidebar">
           <GroupSidebar />
         </div>
       </div>
-      <div className="main_conaitner">
+      <div classNameName="main_conaitner">
       
       <h2>Debts</h2>
-      <div className="table_data line">
-        <div className="flex_spaceBetween">
+      <div classNameName="table_data line">
+        <div classNameName="flex_spaceBetween">
           <select name="ListNumbers" id="ListNumber">
             <option value="10">10</option>
             <option value="15">5</option>
@@ -34,25 +34,25 @@ const Debts = () => {
           </select>
           <button>Settle All Debt</button>
         </div>
-        <div className="table center_table_containt">
+        <div classNameName="table center_table_containt">
         <table>
-          <tr onClick={() => setOpenDebts(true)} class="cursor">
+          <tr onClick={() => setOpenDebts(true)} className="cursor">
             <td>
-            <div className="debt_data_paid_by">   
+            <div classNameName="debt_data_paid_by">   
             <img src={Clark} alt="Group" />
-            <div className="double_text">
+            <div classNameName="double_text">
             <h3>hasham</h3>
             <h5>$53</h5>
             </div>
             </div>
             </td>
             <td>
-            <i className="fa-solid fa-arrow-right"></i>
+            <i classNameName="fa-solid fa-arrow-right"></i>
             </td>
             <td>
-            <div className="debt_data_paid_by">   
+            <div classNameName="debt_data_paid_by">   
             <img src={Clark} alt="Group" />
-            <div className="double_text">
+            <div classNameName="double_text">
             <h3>hasham</h3>
             </div>
             </div>
@@ -60,8 +60,8 @@ const Debts = () => {
           </tr>
         </table>
         </div>
-        <div className="flex_spaceBetween">
-          <p className="pagination_number">Showing 1 to 10 of 14 entries</p>
+        <div classNameName="flex_spaceBetween">
+          <p classNameName="pagination_number">Showing 1 to 10 of 14 entries</p>
           <Pagination />
         </div>
       </div>

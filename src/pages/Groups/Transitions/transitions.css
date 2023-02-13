@@ -11,3 +11,16 @@
 .with_sidebar {
     min-width: 20%;
 }
+.bg_color_box {
+    display: flex;
+    margin: 0px;
+    background: #182f37;
+}
+
+.bg_color_box .boxes {
+    padding: 20px;
+    border-right: 2px solid #1d4149;
+}
+.bg_color_box .boxes:nth-child(3) {
+    border-right: none;
+}

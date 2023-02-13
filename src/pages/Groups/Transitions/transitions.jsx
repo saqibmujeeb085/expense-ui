@@ -13,17 +13,17 @@ const Transitions = () => {
     {opentransition &&
     <NewTransitions changeState={setOpentransition}/>
   }
-        <div className="Container_width_main double_column">
-      <div className="with_sidebar">
-        <div className="Group_sidebar">
+        <div classNameName="Container_width_main double_column">
+      <div classNameName="with_sidebar">
+        <div classNameName="Group_sidebar">
           <GroupSidebar />
         </div>
       </div>
-      <div className="main_conaitner">
+      <div classNameName="main_conaitner">
       
       <h2>TRANSACTIONS</h2>
-      <div className="table_data line">
-        <div className="flex_spaceBetween">
+      <div classNameName="table_data line">
+        <div classNameName="flex_spaceBetween">
           <select name="ListNumbers" id="ListNumber">
             <option value="10">10</option>
             <option value="15">5</option>
@@ -31,9 +31,23 @@ const Transitions = () => {
             <option value="20">20</option>
             <option value="25">25</option>
           </select>
+          <div classNameName="line bg_color_box">
+            <div classNameName="boxes">
+              <h3>Group Name</h3>
+              <h5>Trip</h5>
+            </div>
+            <div classNameName="boxes">
+            <h3>Total Members</h3>
+              <h5>23</h5>
+            </div>
+            <div classNameName="boxes">
+            <h3>Total Paid</h3>
+              <h5>$300</h5>
+            </div>
+          </div>
           <button onClick={() => setOpentransition(true)}>Add New Transaction</button>
         </div>
-        <div className="table">
+        <div classNameName="table">
         <table>
           <thead>
           <tr>
@@ -73,8 +87,8 @@ const Transitions = () => {
           </tr>
         </table>
         </div>
-        <div className="flex_spaceBetween">
-          <p className="pagination_number">Showing 1 to 10 of 14 entries</p>
+        <div classNameName="flex_spaceBetween">
+          <p classNameName="pagination_number">Showing 1 to 10 of 14 entries</p>
           <Pagination />
         </div>
       </div>

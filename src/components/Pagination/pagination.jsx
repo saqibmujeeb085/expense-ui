@@ -3,10 +3,10 @@ import './pagination.css';
 
 const Pagination = () => {
   return (
-    <div class="pagination">
+    <div className="pagination">
       <ul>
         <li>Prev</li>
-        <li class="active">1</li>
+        <li className="active">1</li>
         <li>2</li>
         <li>Next</li>
       </ul>

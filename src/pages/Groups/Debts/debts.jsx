@@ -31,7 +31,7 @@ const Debts = () => {
           <tr>
             <td>
             <div className="debt_data_paid_by">   
-            <img src={Clark} alt="Group image" />
+            <img src={Clark} alt="Group" />
             <div className="double_text">
             <h3>hasham</h3>
             <h5>$53</h5>
@@ -43,7 +43,7 @@ const Debts = () => {
             </td>
             <td>
             <div className="debt_data_paid_by">   
-            <img src={Clark} alt="Group image" />
+            <img src={Clark} alt="Group" />
             <div className="double_text">
             <h3>hasham</h3>
             </div>

@@ -37,7 +37,7 @@ const Members = () => {
         </thead>
         <tr>
             <td>
-            <img src={Clark} alt="Group image" />
+            <img src={Clark} alt="Group" />
             </td>
             <td>
             <h3>Hasham</h3>

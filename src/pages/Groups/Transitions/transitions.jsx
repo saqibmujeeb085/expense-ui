@@ -50,7 +50,7 @@ const Transitions = () => {
           </thead>
           <tr>
             <td>
-            <img src={Clark} alt="Group image" />
+            <img src={Clark} alt="Group" />
             </td>
             <td>
             <h3>Lunch</h3>

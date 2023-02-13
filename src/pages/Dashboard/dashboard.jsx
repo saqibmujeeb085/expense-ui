@@ -7,45 +7,45 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return ( 
-    <div classNameName="Container_width_main">
+    <div className="Container_width_main">
       <h2>DASHBOARD</h2>
-      <div  classNameName="data_container line">
-        <div classNameName="dta_box">
+      <div  className="data_container line">
+        <div className="dta_box">
           <h3>
             Total Groups
           </h3>
-          <div classNameName="flex_spaceBetween">
+          <div className="flex_spaceBetween">
             <h4>04</h4>
-            <i classNameName="fa-solid fa-people-group"></i>
+            <i className="fa-solid fa-people-group"></i>
           </div>
         </div>
-        <div classNameName="dta_box">
+        <div className="dta_box">
         <h3>
             Total Friends
           </h3>
-          <div classNameName="flex_spaceBetween">
+          <div className="flex_spaceBetween">
             <h4>23</h4>
-            <i classNameName="fa-solid fa-user-group"></i>
+            <i className="fa-solid fa-user-group"></i>
           </div>
         </div>
-        <div classNameName="dta_box">
+        <div className="dta_box">
         <h3>
             Total Transactioins
           </h3>
-          <div classNameName="flex_spaceBetween">
+          <div className="flex_spaceBetween">
             <h4>300</h4>
-            <i classNameName="fa-regular fa-chart-line"></i>
+            <i className="fa-regular fa-chart-line"></i>
           </div>
         </div>
-        <div classNameName="dta_box">
+        <div className="dta_box">
         <h3>
             Total Spending
           </h3>
             <h4>$34K</h4>
         </div>
       </div>
-      <div classNameName="group_and_friends_container">
-      <div classNameName="groups_container line">
+      <div className="group_and_friends_container">
+      <div className="groups_container line">
         <h2>GROUPS</h2>
         <table>
             <tr>
@@ -56,9 +56,9 @@ const Dashboard = () => {
             <tr>
               <td>
               <Link to="/Group/Transactions">
-                <div classNameName="img_with_text">
+                <div className="img_with_text">
                   <img src={Spec} alt="Group pic"/>
-                  <div classNameName="Group_name">
+                  <div className="Group_name">
                     <h3>SPECTS YELLOW</h3>
                     <h4>4 members</h4>
                   </div>
@@ -74,16 +74,16 @@ const Dashboard = () => {
             </tr>
         </table>
       </div>
-      <div classNameName="friends_container line">
-        <div classNameName="flex_spaceBetween">
+      <div className="friends_container line">
+        <div className="flex_spaceBetween">
           <h2>Friends</h2>
           <Link to="/Friends">
             VIEW ALL
           </Link>
         </div>
-        <div classNameName="img_with_text">
+        <div className="img_with_text">
                   <img src={Span} alt="Group pic"/>
-                  <div classNameName="Group_name">
+                  <div className="Group_name">
                     <h3>Hasham</h3>
                     <h4>hasham.321@gmail.com</h4>
                   </div>

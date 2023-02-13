@@ -5,14 +5,14 @@ import Logo from "./../../../images/Logo.png";
 
 const ForgetPassword = () => {
   return (
-    <div classNameName="forgetpass_page_container bg_img">
-      <div classNameName="forgetpass_form_container bg_color">
-        <div classNameName="logo_image_and_text">
+    <div className="forgetpass_page_container bg_img">
+      <div className="forgetpass_form_container bg_color">
+        <div className="logo_image_and_text">
           <img src={Logo} alt="logo" />
           <h2>Forgot Password!</h2>
           <p>Please enter your mail</p>
         </div>
-        <div classNameName="form_container">
+        <div className="form_container">
           <form>
             <div>
               <input
@@ -20,18 +20,18 @@ const ForgetPassword = () => {
                 name="Email"
                 id="Email"
                 placeholder="Email"
-                classNameName="input"
+                className="input"
               />
             </div>
             <div>
-              <input type="submit" value="Proceed" classNameName="long_butt" />
+              <input type="submit" value="Proceed" className="long_butt" />
             </div>
           </form>
         </div>
-        <div classNameName="create_account_link">
+        <div className="create_account_link">
           <p>
             Take me back to{" "}
-            <Link to="/" classNameName="link">
+            <Link to="/" className="link">
               Sign In
             </Link>
           </p>

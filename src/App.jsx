@@ -21,7 +21,7 @@ import {
 
 const App = () => {
   return (
-    <div classNameName="bg_color full_height">
+    <div className="bg_color full_height">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Signup" element={<SignUp />} />

@@ -10,30 +10,30 @@ const Friends = () => {
     {openNewFriend && 
     <NewFriend changeState={setOpenNewFriend}/>
     }
-    <div classNameName="Container_width_main">
-      <div classNameName="flex_spaceBetween line_bottom_full">
+    <div className="Container_width_main">
+      <div className="flex_spaceBetween line_bottom_full">
         <h2>FRIENDS</h2>
-        <div classNameName="button_and_earch">
-          <button  classNameName="butt" onClick={() => setOpenNewFriend(true)}>Add Friends</button>
-          <div classNameName="search_box">
-            <input type="text" classNameName="searchTerm" placeholder="Search..." />
-            <button type="submit" classNameName="searchButton">
-              <i classNameName="fa fa-search"></i>
+        <div className="button_and_earch">
+          <button  className="butt" onClick={() => setOpenNewFriend(true)}>Add Friends</button>
+          <div className="search_box">
+            <input type="text" className="searchTerm" placeholder="Search..." />
+            <button type="submit" className="searchButton">
+              <i className="fa fa-search"></i>
             </button>
           </div>
         </div>
       </div>
-      <div classNameName="box">
-        <div classNameName="flex_spaceBetween">
-        <div classNameName="img_with_text">
+      <div className="box">
+        <div className="flex_spaceBetween">
+        <div className="img_with_text">
                   <img src={Span} alt="Group pic"/>
-                  <div classNameName="Group_name">
+                  <div className="Group_name">
                     <h3>Hasham</h3>
                     <h4>hasham.321@gmail.com</h4>
                   </div>
                 </div>
-                <div classNameName="Icon_delete">
-                <i classNameName="fa-solid fa-trash"></i>
+                <div className="Icon_delete">
+                <i className="fa-solid fa-trash"></i>
                 </div>
         </div>
       </div>

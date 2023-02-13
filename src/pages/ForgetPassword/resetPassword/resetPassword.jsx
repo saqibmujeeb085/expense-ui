@@ -5,14 +5,14 @@ import Logo from "./../../../images/Logo.png";
 
 const ResetPassword = () => {
   return (
-    <div classNameName="resetPass_page_container bg_img">
-      <div classNameName="resetPass_form_container bg_color">
-        <div classNameName="logo_image_and_text">
+    <div className="resetPass_page_container bg_img">
+      <div className="resetPass_form_container bg_color">
+        <div className="logo_image_and_text">
           <img src={Logo} alt="logo" />
           <h2>Reset Password!</h2>
           <p>Enter your mail and reset your password</p>
         </div>
-        <div classNameName="form_container">
+        <div className="form_container">
           <form>
             <div>
               <input
@@ -20,7 +20,7 @@ const ResetPassword = () => {
                 name="Email"
                 id="Email"
                 placeholder="Email"
-                classNameName="input"
+                className="input"
               />
             </div>
             <div>
@@ -29,7 +29,7 @@ const ResetPassword = () => {
                 name="Password"
                 id="Password"
                 placeholder="Enter Your New Password"
-                classNameName="input"
+                className="input"
               />
             </div>
             <div>
@@ -38,18 +38,18 @@ const ResetPassword = () => {
                 name="Password"
                 id="Password"
                 placeholder="Revise Your New Password"
-                classNameName="input"
+                className="input"
               />
             </div>
             <div>
-              <input type="submit" value="Reset Password" classNameName="long_butt" />
+              <input type="submit" value="Reset Password" className="long_butt" />
             </div>
           </form>
         </div>
-        <div classNameName="create_account_link">
+        <div className="create_account_link">
           <p>
             Take me back to{" "}
-            <Link to="/" classNameName="link">
+            <Link to="/" className="link">
               Sign In
             </Link>
           </p>

@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div classNameName="login_page_container bg_img">
-      <div classNameName="login_form_container bg_color">
-        <div classNameName="logo_image_and_text">
+    <div className="login_page_container bg_img">
+      <div className="login_form_container bg_color">
+        <div className="logo_image_and_text">
           <img src={Logo} alt="logo" />
           <h2>Welcome Back!</h2>
           <p>Please sign in to continue.</p>
         </div>
-        <div classNameName="form_container">
+        <div className="form_container">
           <form>
             <div>
               <input
@@ -20,7 +20,7 @@ const Login = () => {
                 name="Email"
                 id="Email"
                 placeholder="Email"
-                classNameName="input"
+                className="input"
               />
             </div>
             <div>
@@ -29,23 +29,23 @@ const Login = () => {
                 name="Password"
                 id="Password"
                 placeholder="Password"
-                classNameName="input"
+                className="input"
               />
             </div>
-            <div classNameName="flex_spaceBetween">
-              <Link to="/ForgetPassword/ConfirmEmail" classNameName="link">
+            <div className="flex_spaceBetween">
+              <Link to="/ForgetPassword/ConfirmEmail" className="link">
                 Forget Password?
               </Link>
               <Link to="/Dashboard">
-              <input type="submit" value="Login" classNameName="short_butt" />
+              <input type="submit" value="Login" className="short_butt" />
               </Link>
             </div>
           </form>
         </div>
-        <div classNameName="create_account_link">
+        <div className="create_account_link">
           <p>
             Don't have an account?{" "}
-            <Link to="/Signup" classNameName="link">
+            <Link to="/Signup" className="link">
               Create an Account
             </Link>
           </p>

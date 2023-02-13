@@ -38,7 +38,7 @@ const NewTransitions = ({changeState}) => {
 
             <div className="purpose">
               <h3>Purpose</h3>
-              <div classNameName="purpose_option">
+              <div className="purpose_option">
               <i className="fa-solid fa-bars"></i>
               <select name="debt" id="debt"> 
               <option value="Debt Settle">Debt Settle</option>
@@ -49,7 +49,7 @@ const NewTransitions = ({changeState}) => {
               </div>
             </div>
             
-            <div classNameName="date_and_time">
+            <div className="date_and_time">
               <h3>Date and Time</h3>
               <input className="input" type="datetime-local" name="" id="" />
             </div>

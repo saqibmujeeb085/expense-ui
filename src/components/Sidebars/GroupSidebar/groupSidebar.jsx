@@ -5,22 +5,22 @@ import './groupSidebar.css';
 
 const GroupSidebar = () => {
   return (
-    <div classNameName="sidebar_group_page">
-       <ul classNameName="group_links_ul">
+    <div className="sidebar_group_page">
+       <ul className="group_links_ul">
           <li>
-           <Link to="/Group/Transactions"><i classNameName="fa-regular fa-house"></i> Transactions</Link>
+           <Link to="/Group/Transactions"><i className="fa-regular fa-house"></i> Transactions</Link>
           </li>
           <li>
-           <Link to="/Group/Debts"><i classNameName="fa-solid fa-people-group"></i> Debts</Link>
+           <Link to="/Group/Debts"><i className="fa-solid fa-people-group"></i> Debts</Link>
           </li>
           <li>
-           <Link to="/Group/Members"><i classNameName="fa-regular fa-shapes"></i> Members</Link>
+           <Link to="/Group/Members"><i className="fa-regular fa-shapes"></i> Members</Link>
           </li>
           <li>
-           <Link to="/Group/Permissions"><i classNameName="fa-regular fa-flag"></i> Permissions</Link>
+           <Link to="/Group/Permissions"><i className="fa-regular fa-flag"></i> Permissions</Link>
           </li>
           <li>
-           <Link to="/Group/RecentActivity"><i classNameName="fa-solid fa-dollar-sign"></i>Recent Activity</Link>
+           <Link to="/Group/RecentActivity"><i className="fa-solid fa-dollar-sign"></i>Recent Activity</Link>
           </li>
         </ul>
     </div>

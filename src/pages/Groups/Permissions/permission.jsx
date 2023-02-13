@@ -5,31 +5,31 @@ import './permission.css';
 
 const Permission = () => {
   return ( 
-    <div classNameName="Container_width_main double_column">
-    <div classNameName="with_sidebar">
-      <div classNameName="Group_sidebar">
+    <div className="Container_width_main double_column">
+    <div className="with_sidebar">
+      <div className="Group_sidebar">
         <GroupSidebar />
       </div>
     </div>
-    <div classNameName="main_conaitner">
+    <div className="main_conaitner">
     
     <h2>MEMBERS</h2>
     
-    <div classNameName="permission_container line">
-      <div classNameName="flex_spaceBetween">
+    <div className="permission_container line">
+      <div className="flex_spaceBetween">
         <h3>Joining Via Link</h3>
-        <button><i classNameName="fa-solid fa-share-nodes"></i> Share Link</button>
+        <button><i className="fa-solid fa-share-nodes"></i> Share Link</button>
       </div>
-      <div classNameName="permission_checkbox">
+      <div className="permission_checkbox">
         <input type="checkbox" name="Permission" id="Permission"/>
         <p>Anyone with the link can join this group</p>
       </div>
       <h3>Permission</h3>
       <p>These user accounts have access to this group.</p>
-    <div classNameName="flex_spaceBetween mar_top">
-        <div classNameName="img_with_text">
+    <div className="flex_spaceBetween mar_top">
+        <div className="img_with_text">
                   <img src={Per} alt="Group pic"/>
-                  <div classNameName="Group_name">
+                  <div className="Group_name">
                     <h3>Hasham.hanif</h3>
                     <h4>hasmhsda@gmail.com</h4>
                   </div>

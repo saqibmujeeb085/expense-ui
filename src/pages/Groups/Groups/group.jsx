@@ -13,10 +13,10 @@ const Group = () => {
     { openCreateGroups &&
       <CreateGroups changeState={setOpenCreateGroups} />
       }
-    <div classNameName="Container_width_main">
+    <div className="Container_width_main">
       <h2>GROUPS</h2>
-      <div classNameName="table_data line">
-        <div classNameName="flex_spaceBetween">
+      <div className="table_data line">
+        <div className="flex_spaceBetween">
           <select name="ListNumbers" id="ListNumber">
             <option value="10">10</option>
             <option value="15">5</option>
@@ -26,7 +26,7 @@ const Group = () => {
           </select>
           <button onClick={() => setOpenCreateGroups(true)}>Create new group</button>
         </div>
-        <div classNameName="table">
+        <div className="table">
         <table>
           <thead>
           <tr>
@@ -61,19 +61,19 @@ const Group = () => {
             <h3>16-04-2021</h3>
             </td>
             <td>
-            <div classNameName="action_buttons">
-            <i classNameName="fa-solid fa-pencil"></i>
+            <div className="action_buttons">
+            <i className="fa-solid fa-pencil"></i>
             <Link to="/Group/Transactions">
-            <i classNameName="fa-solid fa-eye"></i>
+            <i className="fa-solid fa-eye"></i>
             </Link>
-            <i classNameName="fa-solid fa-trash"></i>
+            <i className="fa-solid fa-trash"></i>
             </div>
             </td>
           </tr>
         </table>
         </div>
-        <div classNameName="flex_spaceBetween">
-          <p classNameName="pagination_number">Showing 1 to 10 of 14 entries</p>
+        <div className="flex_spaceBetween">
+          <p className="pagination_number">Showing 1 to 10 of 14 entries</p>
           <Pagination />
         </div>
       </div>

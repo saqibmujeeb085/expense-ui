@@ -1,0 +1,30 @@
+.signup_page_container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.signup_page_container p{
+    font-size: 13px;
+}
+.signup_form_container{
+    width: 480px;
+    padding: 50px;
+}
+
+.form_container {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+.create_account_link p {
+    text-align: center;
+}
+
+.create_account_link {
+    border-top: 1px solid #18494e;
+    padding-top: 10px;
+}
+.pad-top {
+    padding-top: 50px;
+}

@@ -1,0 +1,16 @@
+.group_links_ul li {list-style: none;padding: 8px 0px;margin: 2px 0px;}
+
+.group_links_ul li a {
+    color: #4deeea;
+}
+
+.group_links_ul a i {
+    font-family: 'FontAwesome';
+    width: 20px;
+}
+.group_links_ul li a:hover {
+    transition: 200ms;
+}
+.group_links_ul li a:hover {
+    margin-left: 5px;
+}

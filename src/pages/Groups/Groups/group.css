@@ -1,0 +1,25 @@
+.table_data.line {
+    padding: 30px;
+}
+.action_buttons i {
+    height: 30px;
+    width: 30px;
+    background: #235A61;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #276C71;
+    color: #45D1CF;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.action_buttons i:hover {
+    transform: scale(1.1);
+}
+
+.action_buttons {
+    display: flex;
+    gap: 10px;
+}

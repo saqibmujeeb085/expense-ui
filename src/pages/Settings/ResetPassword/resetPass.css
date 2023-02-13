@@ -1,0 +1,40 @@
+.box.setting_page_general h3 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #1d4149;
+    margin-bottom: 20px;
+}
+
+.box.setting_page_general img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user_data_input {
+    padding: 20px 0px;
+}
+
+.user_dta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_dta h4 {
+    min-width: 20%;
+}
+.sub_button {
+    padding: 20px 0px 0px 0px;
+    border-top: 2px solid #1d4149;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+.red {
+    background: transparent;
+    color: red;
+    border: 2px solid red !important;
+}

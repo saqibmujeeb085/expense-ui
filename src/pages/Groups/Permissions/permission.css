@@ -1,0 +1,25 @@
+.permission_container {
+    padding: 30px;
+    margin: 30px 0px !IMPORTANT;
+}
+
+.permission_container.line h3 {
+    color: #889b9e !IMPORTANT;
+}
+
+.permission_container.line button i {
+    font-family: 'FontAwesome';
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.permission_checkbox {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+.mar_top {
+    margin-top: 50px;
+}

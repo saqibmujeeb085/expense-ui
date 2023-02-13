@@ -1,0 +1,13 @@
+.double_column {
+    display: flex !important;
+    gap: 10px;
+    justify-content: center;
+}
+
+.main_conaitner {
+    width: 100%;
+}
+
+.with_sidebar {
+    min-width: 20%;
+}

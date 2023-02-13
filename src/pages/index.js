@@ -1,0 +1,15 @@
+export {default as Login} from './Login/login';
+export {default as ForgetPassword} from './ForgetPassword/forgetPassword/forgetPassword';
+export {default as ResetPassword} from './ForgetPassword/resetPassword/resetPassword';
+export {default as SignUp} from './Signup/signup';
+export {default as General} from './Settings/General/general';
+export {default as ResetPass} from './Settings/ResetPassword/resetPass';
+export {default as Dashborad} from './Dashboard/dashboard';
+export {default as Transitions} from './Groups/Transitions/transitions';
+export {default as Memebers} from './Groups/Members/members';
+export {default as Debts} from './Groups/Debts/debts';
+export {default as RecentActivity} from './Groups/RecentAtivity/recentActivity';
+export {default as Permissions} from './Groups/Permissions/permission';
+export {default as Activities} from './Activities/activities';
+export {default as Friends} from './Friends/friends';
+export {default as Group} from './Groups/Groups/group';

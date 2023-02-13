@@ -1,0 +1,21 @@
+.center_table_containt td {
+    text-align: center;border-top: 2px solid #1d4149;
+}
+.center_table_containt th {
+    text-align: center;border-top: 2px solid #1d4149;
+}
+
+.center_table_containt td i {
+    font-size: 30px;
+    color: #4deeea;
+}
+.debt_data_paid_by {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.double_text {
+    text-align: left;
+}
